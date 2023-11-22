@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 
@@ -10,5 +10,10 @@ import { RouterOutlet } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'todoapp';
+  welcome = 'welcome';
+  tasks = signal([
+    'Instalar el Angular CLi',
+    'Crear componentes',
+    'Tarea'
+  ])
 }

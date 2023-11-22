@@ -1,0 +1,17 @@
+.container {
+  padding: 3 rems;
+}
+.box {
+  height: 10px;
+  display: block;
+  background-color: red;
+}
+.message-error {
+  background-color: red;
+  color: aliceblue;
+  opacity: 0;
+  transition: all linear .5s;
+}
+.message-error.show {
+  opacity: 1;
+}
